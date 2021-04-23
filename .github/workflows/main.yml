@@ -4,12 +4,15 @@ on: [push]
 
 jobs:
   test:
-  
     runs-on: ubuntu-latest
-    
     steps:
       - uses: sfdx-actions/setup-sfdx@v1
         with:
           sfdx-auth-url: ${{ secrets.AUTH_SECRET }}
-      - name: sfdx-test-run
+      - name: orgList
+        run: sfdx force:org:list
+  test2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: orgList2
         run: sfdx force:org:list
