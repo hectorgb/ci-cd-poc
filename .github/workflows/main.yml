@@ -34,6 +34,12 @@ jobs:
     container:
       image: hectorgonzalezbarata/pmd-docker-image
     steps:
+      - name: pwd
+        shell: bash
+        run: pwd
+      - name: ls
+        shell: bash
+        run: ls
       - name: Run in container
         shell: bash
         run: pmd
