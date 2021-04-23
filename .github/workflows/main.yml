@@ -37,7 +37,7 @@ jobs:
 
   container:
       runs-on: ubuntu-latest
-      container: node:10.16-jessie
+      container: hectorgonzalezbarata/pmd-docker-image
       steps:
         - run: pmd
           name: Run in container
