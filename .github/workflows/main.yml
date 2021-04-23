@@ -11,8 +11,5 @@ jobs:
           sfdx-auth-url: ${{ secrets.AUTH_SECRET }}
       - name: orgList
         run: sfdx force:org:list
-  test2:
-    runs-on: ubuntu-latest
-    steps:
       - name: orgList2
         run: sfdx force:org:list
