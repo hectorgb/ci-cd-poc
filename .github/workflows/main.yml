@@ -35,4 +35,5 @@ jobs:
       image: hectorgonzalezbarata/pmd-docker-image
     steps:
       - name: Run in container
+        shell: bash
         run: pmd
