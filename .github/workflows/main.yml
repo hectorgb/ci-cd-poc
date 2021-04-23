@@ -34,3 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+  container:
+      runs-on: ubuntu-latest
+      container: node:10.16-jessie
+      steps:
+        - run: pmd
+          name: Run in container
