@@ -12,5 +12,5 @@ jobs:
           sfdx-auth-url: ${{ secrets.AUTH_SECRET }}
       - name: orgList
         run: sfdx force:org:list
-      - name: run-pmd
-        run: pmd
+      - name: runPmd
+        run: ./force-app/main/default/classes -R ruleset.xml -f text
